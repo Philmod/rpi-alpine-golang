@@ -7,6 +7,7 @@ rm -rf /var/cache/apk/*
 
 ADD https://storage.googleapis.com/golang/go1.7.4.linux-armv6l.tar.gz .
 RUN tar -C /usr/local -xzf go1.7.4.linux-armv6l.tar.gz
+RUN rm go1.7.4.linux-armv6l.tar.gz
 
 ENV GOROOT /usr/local/go
 ENV GOPATH /go
